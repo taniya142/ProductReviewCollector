@@ -1,4 +1,5 @@
 const puppeteer = require('puppeteer');
+const fs = require("fs");
 
 let websiteUrl = "https://www.flipkart.com/";
 let loginCrossButton = "._2KpZ6l._2doB4z";
@@ -9,8 +10,8 @@ let starsSelector = "._3LWZlK";
 
 let videoLink = ".yt-simple-endpoint.style-scope.ytd-video-renderer";
 
-// let categories = ["Laptops", "Mobile Phones", "Television","Camera"]
-let categories = ["Laptops"]
+let categories = ["Laptops", "Mobile Phones", "Television","Camera"]
+// let categories = ["Laptops"]
 
 async function doForCategory(page, category) {
     let searchInput = await page.$(typeItemInFlipkart);
@@ -41,14 +42,15 @@ async function doForCategory(page, category) {
 
         let items = [];
         for (let i = 0; i < 5; i++) {
-            items.push(allItems[i].innerText.split('(')[0]);
+            items.push(allItems[i].innerText);
         }
 
         // console.log(stars);
         return { stars, items };
     });
-    console.log(result);
-    return result.items;
+
+    // console.log(result);
+    return result;
 
 }
 
@@ -86,7 +88,9 @@ async function searchOnYoutube(youtubePage, categoryItem) {
         // console.log(links);
         return links;
     });
-    console.log(links);
+    
+    return links;
+    // console.log(links);
     
 }
 
@@ -116,13 +120,19 @@ function openWebsite() {
 
         await youtubePage.goto("https://www.youtube.com/");
         
+        let final_links = []
         for (let i = 0; i < categories.length; i++) {
         for (let j = 0; j < arr[i].length; j++) {
-            await searchOnYoutube(youtubePage, arr[i][j] + "review");
+            final_links.push(await searchOnYoutube(youtubePage, arr[i][j].items + " review"));
         }
     }
 
+    fs.writeFileSync("star_and_item_data.json", JSON.stringify(arr));
+    fs.writeFileSync("youtube_links", JSON.stringify(final_links));
+
     })();
+
+    
 }
 
 openWebsite();
