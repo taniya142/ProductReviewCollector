@@ -10,8 +10,8 @@ let starsSelector = "._3LWZlK";
 
 let videoLink = ".yt-simple-endpoint.style-scope.ytd-video-renderer";
 
-let categories = ["Laptops", "Mobile Phones", "Television","Camera"]
-// let categories = ["Laptops"]
+// let categories = ["Laptops", "Mobile Phones", "Television","Camera"]
+let categories = ["Laptops"]
 
 async function doForCategory(page, category) {
     let searchInput = await page.$(typeItemInFlipkart);
@@ -30,23 +30,30 @@ async function doForCategory(page, category) {
 
 
     let result = await page.evaluate(function () {
+
+        
+        let finalResultForCategory = [];
+
+        for(let i = 0; i < 5; i++) {
+            finalResultForCategory.push({});
+        }
+
         let allStars = document.querySelectorAll("._3LWZlK");
 
-        let stars = [];
 
         for (let i = 0; i < 5; i++) {
-            stars.push(allStars[i].innerText);
+            finalResultForCategory[i].stars = allStars[i].innerText;
         }
 
         let allItems = document.querySelectorAll("._4rR01T");
 
-        let items = [];
+    
         for (let i = 0; i < 5; i++) {
-            items.push(allItems[i].innerText);
+            finalResultForCategory[i].title = allItems[i].innerText;
         }
 
         // console.log(stars);
-        return { stars, items };
+        return finalResultForCategory;
     });
 
     // console.log(result);
@@ -73,7 +80,7 @@ async function searchOnYoutube(youtubePage, categoryItem) {
     await youtubePage.waitForSelector(videoLink);
 
     
-    let links = await youtubePage.evaluate(function () {
+    let youtube_links = await youtubePage.evaluate(function () {
         let allLinks = document.querySelectorAll(".yt-simple-endpoint.style-scope.ytd-video-renderer");
 
         let links = [];
@@ -89,7 +96,7 @@ async function searchOnYoutube(youtubePage, categoryItem) {
         return links;
     });
     
-    return links;
+    return youtube_links;
     // console.log(links);
     
 }
@@ -120,15 +127,13 @@ function openWebsite() {
 
         await youtubePage.goto("https://www.youtube.com/");
         
-        let final_links = []
         for (let i = 0; i < categories.length; i++) {
         for (let j = 0; j < arr[i].length; j++) {
-            final_links.push(await searchOnYoutube(youtubePage, arr[i][j].items + " review"));
+            arr[i][j].links = await searchOnYoutube(youtubePage, arr[i][j].title + " review");
         }
     }
 
-    fs.writeFileSync("star_and_item_data.json", JSON.stringify(arr));
-    fs.writeFileSync("youtube_links", JSON.stringify(final_links));
+    fs.writeFileSync("data.json", JSON.stringify(arr));
 
     })();
 
