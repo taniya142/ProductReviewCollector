@@ -10,8 +10,8 @@ let starsSelector = "._3LWZlK";
 
 let videoLink = ".yt-simple-endpoint.style-scope.ytd-video-renderer";
 
-// let categories = ["Laptops", "Mobile Phones", "Television","Camera"]
-let categories = ["Laptops"]
+let categories = ["Laptops", "Mobile Phones", "Television","Camera"]
+// let categories = ["Laptops"]
 
 async function doForCategory(page, category) {
     let searchInput = await page.$(typeItemInFlipkart);
@@ -85,7 +85,7 @@ async function searchOnYoutube(youtubePage, categoryItem) {
 
         let links = [];
 
-        for (let i = 0; i < 10; i++) {
+        for (let i = 0; i < 5; i++) {
             if(i%2==0){
                 links.push("https://www.youtube.com" + allLinks[i].getAttribute('href'));
             }
@@ -117,8 +117,15 @@ function openWebsite() {
         // await page.click(loginCrossButton);
 
         let arr = [];
+
+        // for(let i=0;i<categories.length;i++){
+        //     arr.push(categories[i]);
+        // }
         for (let i = 0; i < categories.length; i++) {
-            arr.push(await doForCategory(page, categories[i]));
+            arr.push({
+                category:categories[i],
+                items:await doForCategory(page, categories[i])
+            });
         }
 
         // nextPage---for youtube
@@ -128,11 +135,11 @@ function openWebsite() {
         await youtubePage.goto("https://www.youtube.com/");
         
         for (let i = 0; i < categories.length; i++) {
-        for (let j = 0; j < arr[i].length; j++) {
-            arr[i][j].links = await searchOnYoutube(youtubePage, arr[i][j].title + " review");
+        for (let j = 0; j < arr[i].items.length; j++) {
+            arr[i].items[j].links = await searchOnYoutube(youtubePage, arr[i].items[j].title + " review");
         }
     }
-
+    
     fs.writeFileSync("data.json", JSON.stringify(arr));
 
     })();

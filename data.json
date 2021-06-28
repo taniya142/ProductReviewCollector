@@ -1,59 +1,202 @@
 [
-    [
-        {
-            "stars": "4.5",
-            "title": "acer Predator Helios 300 Octa Core i7 10th Gen - (16 GB/1 TB HDD/256 GB SSD/Windows 10 Home/6 GB Graph...",
-            "links": [
-                "https://www.youtube.com/watch?v=DlpSzX8QZa8",
-                "https://www.youtube.com/watch?v=IK7J1mQm4no",
-                "https://www.youtube.com/watch?v=jjMMjIx96Ec",
-                "https://www.youtube.com/watch?v=qvZ2FrUYthE",
-                "https://www.youtube.com/watch?v=eHooSc2RhEI"
-            ]
-        },
-        {
-            "stars": "4.4",
-            "title": "MSI GF63 Thin Core i5 9th Gen - (8 GB/512 GB SSD/Windows 10 Home/4 GB Graphics/NVIDIA GeForce GTX 1650...",
-            "links": [
-                "https://www.youtube.com/watch?v=DlpSzX8QZa8",
-                "https://www.youtube.com/watch?v=IK7J1mQm4no",
-                "https://www.youtube.com/watch?v=jjMMjIx96Ec",
-                "https://www.youtube.com/watch?v=qvZ2FrUYthE",
-                "https://www.youtube.com/watch?v=eHooSc2RhEI"
-            ]
-        },
-        {
-            "stars": "4",
-            "title": "HP 15s Athlon Dual Core - (4 GB/1 TB HDD/Windows 10 Home) 15s-GY0001AU Thin and Light Laptop",
-            "links": [
-                "https://www.youtube.com/watch?v=cI3Xb5bi3s8",
-                "https://www.youtube.com/watch?v=-HT_RrS-2lY",
-                "https://www.youtube.com/watch?v=jGCsLbiM-fQ",
-                "https://www.youtube.com/watch?v=3UsKyOi70HI",
-                "https://www.youtube.com/watch?v=l7h4ugNeleU"
-            ]
-        },
-        {
-            "stars": "4.3",
-            "title": "DELL Inspiron 3501 Core i5 11th Gen - (8 GB/1 TB HDD/256 GB SSD/Windows 10 Home) Inspiron 3501 Laptop",
-            "links": [
-                "https://www.youtube.com/watch?v=cI3Xb5bi3s8",
-                "https://www.youtube.com/watch?v=-HT_RrS-2lY",
-                "https://www.youtube.com/watch?v=jGCsLbiM-fQ",
-                "https://www.youtube.com/watch?v=IBmE_oxZr9I",
-                "https://www.youtube.com/watch?v=ef8m8JNMdw0"
-            ]
-        },
-        {
-            "stars": "4.5",
-            "title": "HP 14s Core i3 11th Gen - (8 GB/256 GB SSD/Windows 10 Home) 14s- DY2501TU Thin and Light Laptop",
-            "links": [
-                "https://www.youtube.com/watch?v=p41lG1qhc14",
-                "https://www.youtube.com/watch?v=S3IEzetPAAA",
-                "https://www.youtube.com/watch?v=er2ehFWStRI",
-                "https://www.youtube.com/watch?v=CSQY5PgmDbw",
-                "https://www.youtube.com/watch?v=jZ3RYbvyqpU"
-            ]
-        }
-    ]
+    {
+        "category": "Laptops",
+        "items": [
+            {
+                "stars": "4.5",
+                "title": "acer Predator Helios 300 Octa Core i7 10th Gen - (16 GB/1 TB HDD/256 GB SSD/Windows 10 Home/6 GB Graph...",
+                "links": [
+                    "https://www.youtube.com/watch?v=DlpSzX8QZa8",
+                    "https://www.youtube.com/watch?v=IK7J1mQm4no",
+                    "https://www.youtube.com/watch?v=jjMMjIx96Ec"
+                ]
+            },
+            {
+                "stars": "4.6",
+                "title": "MSI GP65 Leopard Core i7 10th Gen - (16 GB/1 TB HDD/256 GB SSD/Windows 10 Home/6 GB Graphics/NVIDIA Ge...",
+                "links": [
+                    "https://www.youtube.com/watch?v=DlpSzX8QZa8",
+                    "https://www.youtube.com/watch?v=IK7J1mQm4no",
+                    "https://www.youtube.com/watch?v=jjMMjIx96Ec"
+                ]
+            },
+            {
+                "stars": "4.5",
+                "title": "HP 14s Core i3 11th Gen - (8 GB/256 GB SSD/Windows 10 Home) 14s- DY2501TU Thin and Light Laptop",
+                "links": [
+                    "https://www.youtube.com/watch?v=p41lG1qhc14",
+                    "https://www.youtube.com/watch?v=S3IEzetPAAA",
+                    "https://www.youtube.com/watch?v=er2ehFWStRI"
+                ]
+            },
+            {
+                "stars": "4",
+                "title": "HP 15s Athlon Dual Core - (4 GB/1 TB HDD/Windows 10 Home) 15s-GY0001AU Thin and Light Laptop",
+                "links": [
+                    "https://www.youtube.com/watch?v=eCiP3Gr7gcs",
+                    "https://www.youtube.com/watch?v=pHraYayylLU",
+                    "https://www.youtube.com/watch?v=IBmE_oxZr9I"
+                ]
+            },
+            {
+                "stars": "4.1",
+                "title": "HP Pentium Quad Core - (8 GB/256 GB SSD/Windows 10 Home) 14s- DQ3018TU Thin and Light Laptop",
+                "links": [
+                    "https://www.youtube.com/watch?v=dEkXdRhJwhM",
+                    "https://www.youtube.com/watch?v=OGZl9NeWrc4",
+                    "https://www.youtube.com/watch?v=mKRwTB9SESY"
+                ]
+            }
+        ]
+    },
+    {
+        "category": "Mobile Phones",
+        "items": [
+            {
+                "stars": "4.3",
+                "title": "REDMI 9i (Midnight Black, 64 GB)",
+                "links": [
+                    "https://www.youtube.com/watch?v=5Fx-Pex9Xa4",
+                    "https://www.youtube.com/watch?v=3itjy3q9fOQ",
+                    "https://www.youtube.com/watch?v=UzPvgGm9es4"
+                ]
+            },
+            {
+                "stars": "4.4",
+                "title": "realme C21 (Cross Blue, 64 GB)",
+                "links": [
+                    "https://www.youtube.com/watch?v=Gg2wx11MZdo",
+                    "https://www.youtube.com/watch?v=kaaUOZvNiaU",
+                    "https://www.youtube.com/watch?v=-E7FhIxgC0U"
+                ]
+            },
+            {
+                "stars": "4.5",
+                "title": "realme C21 (Cross Black, 32 GB)",
+                "links": [
+                    "https://www.youtube.com/watch?v=kaaUOZvNiaU",
+                    "https://www.youtube.com/watch?v=E2Yzouv7V-g",
+                    "https://www.youtube.com/watch?v=-E7FhIxgC0U"
+                ]
+            },
+            {
+                "stars": "4.4",
+                "title": "realme C21 (Cross Black, 64 GB)",
+                "links": [
+                    "https://www.youtube.com/watch?v=kaaUOZvNiaU",
+                    "https://www.youtube.com/watch?v=Gg2wx11MZdo",
+                    "https://www.youtube.com/watch?v=E2Yzouv7V-g"
+                ]
+            },
+            {
+                "stars": "4.5",
+                "title": "realme C21 (Cross Blue, 32 GB)",
+                "links": [
+                    "https://www.youtube.com/watch?v=kaaUOZvNiaU",
+                    "https://www.youtube.com/watch?v=-E7FhIxgC0U",
+                    "https://www.youtube.com/watch?v=Gg2wx11MZdo"
+                ]
+            }
+        ]
+    },
+    {
+        "category": "Television",
+        "items": [
+            {
+                "stars": "3.9",
+                "title": "Sansui 80 cm (32 inch) HD Ready LED Smart Android TV",
+                "links": [
+                    "https://www.youtube.com/watch?v=hX6nkuagzPM",
+                    "https://www.youtube.com/watch?v=KObTXtEs9YU",
+                    "https://www.youtube.com/watch?v=5WPGJVoY-Qw"
+                ]
+            },
+            {
+                "stars": "5",
+                "title": "LG 139 cm (55 inch) OLED Ultra HD (4K) Smart TV",
+                "links": [
+                    "https://www.youtube.com/watch?v=5WPGJVoY-Qw",
+                    "https://www.youtube.com/watch?v=TPWWddIc_pE",
+                    "https://www.youtube.com/watch?v=LIJ_S3NsqhA"
+                ]
+            },
+            {
+                "stars": "4.4",
+                "title": "Mi 4A PRO 80 cm (32 inch) HD Ready LED Smart Android TV",
+                "links": [
+                    "https://www.youtube.com/watch?v=iu10_2c4cA0",
+                    "https://www.youtube.com/watch?v=1kUbFhsFtfo",
+                    "https://www.youtube.com/watch?v=48x_vhOjrS8"
+                ]
+            },
+            {
+                "stars": "4.4",
+                "title": "LG 80 cm (32 inch) HD Ready LED Smart TV 2020 Edition",
+                "links": [
+                    "https://www.youtube.com/watch?v=bXWlMz-krT4",
+                    "https://www.youtube.com/watch?v=1juD1JPH_hw",
+                    "https://www.youtube.com/watch?v=ZN8G-JceKIQ"
+                ]
+            },
+            {
+                "stars": "4.4",
+                "title": "Mi 4A Pro 108 cm (43 inch) Full HD LED Smart Android TV",
+                "links": [
+                    "https://www.youtube.com/watch?v=kE7lq2mg3qM",
+                    "https://www.youtube.com/watch?v=R8qB1RYy5GY",
+                    "https://www.youtube.com/watch?v=pRXZIwRrnww"
+                ]
+            }
+        ]
+    },
+    {
+        "category": "Camera",
+        "items": [
+            {
+                "stars": "4.5",
+                "title": "UnV HD 720P IP 720p IP Camera Camera",
+                "links": [
+                    "https://www.youtube.com/watch?v=7k8lZEO3u_w",
+                    "https://www.youtube.com/watch?v=vOGOKpYW91E",
+                    "https://www.youtube.com/watch?v=NIDwy-_msxU"
+                ]
+            },
+            {
+                "stars": "4.3",
+                "title": "SONY Alpha ILCE-6000Y/b in5 Mirrorless Camera Body with Dual Lens : 16-50 mm & 55-210 mm",
+                "links": [
+                    "https://www.youtube.com/watch?v=biOQQ1Dqr8I",
+                    "https://www.youtube.com/watch?v=cCf-wLvmjD0",
+                    "https://www.youtube.com/watch?v=sCnax_2Gq7Y"
+                ]
+            },
+            {
+                "stars": "4.7",
+                "title": "Canon M6 Mark II Mirrorless Camera with 15-45 lens",
+                "links": [
+                    "https://www.youtube.com/watch?v=ze8bg8WQKV4",
+                    "https://www.youtube.com/watch?v=9Qb7ONDW7nc",
+                    "https://www.youtube.com/watch?v=pNqDdIaj0mw"
+                ]
+            },
+            {
+                "stars": "4.4",
+                "title": "SONY Alpha ILCE-6400L Mirrorless Camera with 16-50mm Power Zoom Lens",
+                "links": [
+                    "https://www.youtube.com/watch?v=FxA0PzRdm8E",
+                    "https://www.youtube.com/watch?v=E73T8kHutjI",
+                    "https://www.youtube.com/watch?v=kpkwrTAZhbw"
+                ]
+            },
+            {
+                "stars": "4.6",
+                "title": "Canon EOS 3000D DSLR Camera 1 Camera Body, 18 - 55 mm Lens",
+                "links": [
+                    "https://www.youtube.com/watch?v=8cfPJ9_0UgQ",
+                    "https://www.youtube.com/watch?v=y63uSLaOMN4",
+                    "https://www.youtube.com/watch?v=PXZpC5XM_Mo"
+                ]
+            }
+        ]
+    }
 ]
