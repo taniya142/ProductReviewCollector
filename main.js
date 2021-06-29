@@ -10,8 +10,7 @@ let starsSelector = "._3LWZlK";
 
 let videoLink = ".yt-simple-endpoint.style-scope.ytd-video-renderer";
 
-let categories = ["Laptops", "Mobile Phones", "Television","Camera"]
-// let categories = ["Laptops"]
+let categories = ["Laptops", "Mobile Phones", "Television","Camera","Microwave"]
 
 async function doForCategory(page, category) {
     let searchInput = await page.$(typeItemInFlipkart);
@@ -42,14 +41,20 @@ async function doForCategory(page, category) {
 
 
         for (let i = 0; i < 5; i++) {
-            finalResultForCategory[i].stars = allStars[i].innerText;
+            finalResultForCategory[i].stars = allStars[i].innerText + " stars";
         }
 
-        let allItems = document.querySelectorAll("._4rR01T");
+        let allTitles = document.querySelectorAll("._4rR01T");
 
     
         for (let i = 0; i < 5; i++) {
-            finalResultForCategory[i].title = allItems[i].innerText;
+            finalResultForCategory[i].title = allTitles[i].innerText;
+        }
+
+        let allImages = document.querySelectorAll("._2QcLo- img");
+
+        for (let i = 0; i < 5; i++) {
+            finalResultForCategory[i].images = allImages[i].getAttribute("src");
         }
 
         // console.log(stars);
@@ -105,7 +110,7 @@ function openWebsite() {
     (async function () {
         const browser = await puppeteer.launch({
             headless: false,
-            slowMo: 50,
+            slowMo: 60,
             defaultViewport: null,
             args: ["--start-maximized", '--disable-web-security', "--user-data-dir=C:\\Users\\taniy\\Desktop\\test"],
         });
