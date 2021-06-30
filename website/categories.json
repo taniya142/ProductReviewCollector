@@ -1,0 +1,28 @@
+[
+    {
+        "Products": [
+            {
+                "names":"Laptop",
+                "images": "https://techcrunch.com/wp-content/uploads/2020/12/nokia-laptop-purebook-x14.jpg"
+            },
+            {
+                "names":"Mobile phones",
+                "images": "https://www.macworld.com/wp-content/uploads/2021/03/iphone-11-and-pros-100810657-orig-7.jpg?quality=50&strip=all"
+                
+            },
+            {
+                "names":"Television",
+                "images": "https://www.mylloyd.com/media/products/zoom2-min.jpg"   
+            },
+            {
+                "names":"Camera",
+                "images":"https://cdn.mos.cms.futurecdn.net/2amTeNbLHjD8kMj7f96MfZ.jpg"
+            },
+            {
+                "names":"Microwave",
+                "images":"https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_260,w_260/v1605128699/Croma%20Assets/Small%20Appliances/Microwave%20or%20OTG/Images/8941290553374.png"
+            }
+            
+        ]
+    }
+]
