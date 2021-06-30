@@ -11,6 +11,7 @@ let starsSelector = "._3LWZlK";
 let videoLink = ".yt-simple-endpoint.style-scope.ytd-video-renderer";
 
 let categories = ["Laptops", "Mobile Phones", "Television","Camera","Microwave"]
+// let categories = ["Mobile Phones"];
 
 async function doForCategory(page, category) {
     let searchInput = await page.$(typeItemInFlipkart);

@@ -1,0 +1,16 @@
+Assume this project is open in Visual Studio Code
+
+To view automation process
+    1. Click on "main.js"
+    2. Type node main.js in terminal
+
+
+To view JSON file
+    1. Click on "data.json"
+
+To view website
+    1. Go to wesite folder
+    2. Right click on "index.html"
+    3. Then click on "Open with live server"
+
+
